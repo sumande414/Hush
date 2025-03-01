@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import java.time.LocalDateTime;
 
 @Controller
-@CrossOrigin("https://hush-io.vercel.app")
+@CrossOrigin(origins = {"https://hush-io.vercel.app","http://localhost:5173"})
 public class ChatController {
 
     @Autowired

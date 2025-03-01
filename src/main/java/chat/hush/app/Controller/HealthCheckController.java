@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/v1/healthCheck")
-@CrossOrigin("https://hush-io.vercel.app")
+@CrossOrigin(origins = {"https://hush-io.vercel.app","http://localhost:5173"})
 public class HealthCheckController {
     @GetMapping("/check")
     public ResponseEntity<String> healthCheckHandler(){

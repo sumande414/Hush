@@ -15,7 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/rooms")
-@CrossOrigin("https://hush-io.vercel.app")
+@CrossOrigin(origins = {"https://hush-io.vercel.app","http://localhost:5173"})
 public class RoomController {
 
     @Autowired
